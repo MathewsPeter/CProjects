@@ -1,34 +1,34 @@
 #include <stdio.h>
-
+/*
+4 4 4 4 4 4 4
+4 3 3 3 3 3 4
+4 3 2 2 2 3 4
+4 3 2 1 2 3 4
+4 3 2 2 2 3 4
+4 3 3 3 3 3 4
+4 4 4 4 4 4 4 */
 int main()
 {
 
-    int n=3;
-
-		int i,j;
-    int arr[1999][1999]={-1};
+    int n=4,i,j,k;
     //scanf("%d", &n);
-    int l,r,t,b;
-    l = 0; t = 0;
-    r = n+n-1;
-    b = n+n-1;
-
-    int diff = 0;
-    for(i = l; i>=r; ++i)
+    int i,j,k;
+    for(i = n; i>=1; --i)
     {
-        arr[i][t] = n-diff;
-        arr[i][b] = n-diff;
-        arr[l][i] = n-diff;
-        arr[r][i] = n-diff;
-
+	for(j=n;j>=i; --j)	printf("%d ",j);
+	for(k=1;k<i; ++k)	printf("%d ",i);
+	for(k=1;k<i; ++k)	printf("%d ",i);
+	for(j=i+1;j<=n; ++j)	printf("%d ",j);
+	printf("\n");
     }
 
-
-    for(i = 0; i<=1999; ++i)
-    	{for(j = 0; j<=1999; ++j)
-    		if(arr[i][j] >0)
-        printf("\n");
-    }
-
+    for(i = 2; i<=n; ++i)
+	{
+	for(j=n;j>=i; --j)	printf("%d ",j);
+	for(k=1;k<i; ++k)	printf("%d ",i);
+	for(k=1;k<i; ++k)	printf("%d ",i);
+	for(j=i+1;j<=n; ++j)	printf("%d ",j);
+	printf("\n");
+	}
     return 0;
 }
