@@ -15,13 +15,20 @@ int main()
 {
     char c;
     char s[100];
+
     char l[100];
+
     scanf("%c",&c);
+
+
     scanf("%s", s);
+
     scanf("\n");
     scanf("%[^\n]*c", l);
+
     printf("%c\n",c);
     printf("%s\n",s);
     printf("%s\n",l);
+
     return 0;
 }

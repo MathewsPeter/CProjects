@@ -1,7 +1,5 @@
 #include <stdarg.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 
 #define MIN_ELEMENT 1
 #define MAX_ELEMENT 1000000
@@ -40,5 +38,3 @@ int max(int count,...)
         }
     return max;
 }
-
-int test_implementations_by_sending_three_elements() {
